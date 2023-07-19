@@ -306,11 +306,53 @@ a {
   background-color: white;
   font-size: 24px;
   border-radius: 100%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .video:hover > .video-img::before {
   background-color: rgba(0, 0, 0, 0.55);
 }
 .video:hover .video-img::after {
   transform: translate(-50%, -50%) scale(1);
+}
+/* ---------------------------
+    instantly play section styling
+--------------------------- */
+.play-instantly-container {
+  justify-content: space-between;
+  gap: 10rem;
+}
+.instantly-img {
+  width: 50%;
+  position: relative;
+}
+.instantly-img .pos-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.instantly-img .freefire-bg {
+  width: 20rem;
+  height: 20rem;
+  background-image: url('../img/game\ c\ 1.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 68% center;
+  border: .625rem solid white;
+  position: absolute;
+  bottom: -7.5rem;
+  left: -9.375rem;
+  border-radius: .625rem;
+}
+.instantly-content {
+  text-transform: capitalize;
+}
+.instantly-content h2 {
+  margin-bottom: 1.5rem;
+}
+.instantly-content h2 > span {
+  background: none;
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
 }
