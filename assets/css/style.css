@@ -233,7 +233,7 @@ a {
   align-items: flex-end;
   gap: 1.5rem;
 }
-.community-content p {
+.community-content > p {
   direction: rtl;
 }
 .purpose {
@@ -247,7 +247,7 @@ a {
   font-weight: 700;
 }
 /* ---------------------------
-    funny video section styling
+    online funny video section styling
 --------------------------- */
 .funny-video-content {
   text-align: center;
@@ -403,6 +403,7 @@ a {
 .footer-container {
   flex-direction: column;
   gap: 3rem;
+  justify-content: center;
 }
 .footer-container a,
 .footer-container p {
@@ -412,10 +413,13 @@ a {
 .terms a,
 .copyright p {
   color: #959595;
+  text-align: center;
 }
 .footer-container > .flex:not(.logo) {
   gap: 3.5rem;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .social-icon {
   gap: 20px;
@@ -427,6 +431,7 @@ a {
   display: none;
 }
 
+/* --------- responsive for mobile ---------- */
 @media screen and (max-width: 576px) {
   /* reusable css */
   :root {
@@ -434,14 +439,12 @@ a {
     --h2-size: 2rem;
     --h3-size: 1.15rem;
     --paragraph-size: 1rem;
-    --line-height-medium: 2.5rem;
-    --line-height-small: 2rem;
     --section-padding: 80px;
     --container: auto;
     --primary-btn-padding: 0.625rem 1.5rem;
   }
   .container {
-    padding-inline: 24px;
+    padding-inline: 1.625rem;
   }
   /* ---------------------------
       Navbar section responsive
@@ -480,9 +483,6 @@ a {
     flex-direction: column;
     gap: 5rem;
   }
-  /* .community-container.section-padding {
-    padding-block: 0;
-  } */
   .community-content {
     align-items: center;
     text-align: center;
@@ -494,7 +494,7 @@ a {
     display: initial;
   }
   /* ---------------------------
-      Navbar section responsive
+      online funny video section responsive
   --------------------------- */
   #funny-video {
     margin-top: 2rem;
@@ -503,10 +503,6 @@ a {
     align-items: center;
     justify-content: center;
     gap: 4rem;
-  }
-  .funny-videos .video {
-    width: 100%;
-    cursor: pointer;
   }
   /* ---------------------------
       play instantly responsive
@@ -527,13 +523,162 @@ a {
     bottom: -80px;
     left: 1rem;
     border-radius: 0.3125rem;
+    border: 0.3125rem solid white;
+  }
+}
+
+/* ------- Reponsive for small tablets --------- */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  :root {
+    --section-padding: 100px;
+    --container: auto;
+    --primary-btn-padding: 0.625rem 1.5rem;
+  }
+  .container {
+    padding: 2rem;
   }
   /* ---------------------------
-      footer section styling
+      Navbar section responsive
   --------------------------- */
-  .terms a,
-  .copyright p {
-    color: #959595;
+  #navbar {
+    position: static;
+    box-shadow: none;
+    border-bottom: 0;
+    background-color: var(--white);
+  }
+  .nav-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .nav-container .menu ul {
+    flex-direction: column;
+  }
+  /* ---------------------------
+      hero section responsive
+  --------------------------- */
+  #hero-section {
+    background-image: none;
+    margin-top: 80px;
+  }
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 5rem;
+  }
+  .hero-img img {
+    max-width: 100%;
+  }
+  /* ---------------------------
+      online funny video section responsive
+  --------------------------- */
+  #funny-video {
+    margin-top: 3rem;
+  }
+  .funny-videos {
+    /* align-items: center; */
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 2rem;
+  }
+  /* ---------------------------
+      play instantly responsive
+  --------------------------- */
+  .play-instantly-container {
+    flex-direction: column-reverse;
+    gap: 12rem;
+  }
+  .instantly-img {
+    width: 100%;
+  }
+  .instantly-img img {
+    width: 100%;
+  }
+  .instantly-img .freefire-bg {
+    width: 15rem;
+    height: 15rem;
+    bottom: -130px;
+    left: 1rem;
+    border-radius: 0.3125rem;
+    border: 0.4rem solid white;
+  }
+  /* ---------------------------
+      community section respo
+  --------------------------- */
+  .community-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .community-content {
+    align-items: center;
     text-align: center;
+  }
+  .community-content p {
+    direction: initial;
+  }
+  .purpose {
+    display: initial;
+  }
+}
+
+/* ------- Reponsive for big tablets / laptops --------- */
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+  :root {
+    --h1-size: 5rem;
+    --h2-size: 2.5rem;
+    --h3-size: 1.25rem;
+    --paragraph-size: 1.15rem;
+    --section-padding: 100px;
+    --container: 1100px;
+  }
+  /* ---------------------------
+      hero section responsive
+  --------------------------- */
+  .hero-img {
+    max-width: 50%;
+  }
+  .hero-img img {
+    max-width: 100%;
+  }
+  /* ---------------------------
+      online funny video section responsive
+  --------------------------- */
+  #funny-video {
+    margin-top: 3rem;
+  }
+  .funny-videos {
+    row-gap: 3rem;
+  }
+  /* ---------------------------
+      community section respo
+  --------------------------- */
+  .community-container {
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  .community-content {
+    max-width: 420px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+  }
+  /* ---------------------------
+    instantly play section respo
+--------------------------- */
+  .play-instantly-container {
+    gap: 13rem;
+  }
+  .instantly-img img {
+    width: 100%;
+  }
+  .instantly-content {
+    width: 50%;
+  }
+  .instantly-img .freefire-bg {
+    width: 15rem;
+    height: 15rem;
+    border: 0.5rem solid white;
+    bottom: -6rem;
+    left: -7rem;
+    border-radius: 0.5rem;
   }
 }
