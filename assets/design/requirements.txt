@@ -4,7 +4,7 @@
 ## 👇 Assignment Requirements 👇
 
   1. Normal Rules
-    ▸ I can change color theme "but I can't change the layout"
+    ▸ I can change color and image "but I can't change the layout"
     ▸ Layout should be same as figma design
     ▸ I must complete main sections & bonus section
     ▸ I can avoid optional sections (but I'll do it)
@@ -21,9 +21,9 @@
     ▸ Deadline is Deadline (11:59 PM)
 
   3. Main sections todo
-    ▸ Banner / Navbar Section
-    ▸ Hero section
-    ▸ Online Games section 
+    ▸ Banner / Navbar Section (✔)
+    ▸ Hero section (✔)
+    ▸ Online Games section ()
     ▸ Play instantly section 
     ▸ Games category section
     ▸ Footer section

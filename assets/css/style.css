@@ -242,3 +242,75 @@ a {
 .community-content .purpose p:nth-child(2) {
   font-weight: 700;
 }
+/* ---------------------------
+    funny video section styling
+--------------------------- */
+.funny-video-content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.funny-video-content h2 > span {
+  background: none;
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+.funny-video-content p {
+  margin-top: 0.625rem;
+}
+.funny-videos {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.funny-videos .video {
+  width: 342px;
+  cursor: pointer;
+}
+.video-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.video-img img {
+  transition: all 0.1s ease-in-out;
+}
+.funny-videos .video .video-content {
+  margin-top: 1.5rem;
+}
+.video .video-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.video .video-img::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: white;
+  font-size: 24px;
+  border-radius: 100%;
+  transition: all .2s ease-in-out;
+}
+.video:hover > .video-img::before {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.video:hover .video-img::after {
+  transform: translate(-50%, -50%) scale(1);
+}
