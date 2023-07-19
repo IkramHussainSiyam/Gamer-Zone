@@ -17,11 +17,14 @@
   --white: #fff;
   --black: #000;
   --pink-medium: #ff42a5;
+  --pink-hover: #f32b92;
   --purple: #8758f1;
   --blue: #4ec5f7;
+  --blue-hover: #27b4f1;
   --dark-purple: #534c64;
   --gradient: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   --dark-gray: rgba(11, 2, 35, 0.1);
+  --dark-gray-hover: rgba(11, 2, 35, 0.15);
   /* font-size */
   --h1-size: 6rem;
   --h2-size: 3rem;
@@ -32,7 +35,7 @@
   /* others */
   --section-padding: 120px;
   --container: 1440px;
-  --primary-btn-padding: 1.3rem 2.5rem;
+  --primary-btn-padding: 0.875rem 2rem;
 }
 
 /* --- default stlings --- */
@@ -93,6 +96,7 @@ a {
   outline: none;
   cursor: pointer;
   border-radius: 31.25rem;
+  transition: all 0.1s ease-in-out;
 }
 .btn-blue {
   padding: var(--primary-btn-padding);
@@ -105,6 +109,7 @@ a {
   outline: none;
   cursor: pointer;
   border-radius: 31.25rem;
+  transition: all 0.1s ease-in-out;
 }
 .btn-white {
   padding: var(--primary-btn-padding);
@@ -117,6 +122,7 @@ a {
   outline: none;
   cursor: pointer;
   border-radius: 31.25rem;
+  transition: all 0.1s ease-in-out;
 }
 .section-padding {
   padding-block: var(--section-padding);
@@ -135,9 +141,11 @@ a {
 #navbar {
   position: sticky;
   top: 0;
-  box-shadow: 0 0.25rem 1.875rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 1.875rem 0 rgba(0, 0, 0, 0.02);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding: 1.6rem;
+  z-index: 1000;
+  background-color: var(--white);
 }
 .nav-container {
   justify-content: space-between;
@@ -160,5 +168,41 @@ a {
   gap: 1rem;
   background-color: var(--dark-gray);
   padding: 1rem 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+}
+.nav-btn:hover {
+  background-color: var(--dark-gray-hover);
+}
+/* ---------------------------
+    Hero section styling
+--------------------------- */
+#hero-section {
+  background-image: url("../img/Group\ 14.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+.hero-container {
+  justify-content: space-between;
+}
+.hero-content > h2 {
+  text-transform: uppercase;
+  background: none;
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+.hero-content ul {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.hero-content ul li {
+  gap: 0.7rem;
+  color: #534c64;
+}
+.hero-btn > .btn-blue:hover {
+  background-color: var(--blue-hover);
+}
+.hero-btn > .btn-pink:hover {
+  background-color: var(--pink-hover);
 }
