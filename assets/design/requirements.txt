@@ -1,0 +1,39 @@
+# Milestone 1 ▸ Module 11 ▸ Assignment 2 (Responsive "Gamer Zone" Website)
+  - An assignment from "Programming hero 🦸".
+
+## 👇 Assignment Requirements 👇
+
+  1. Normal Rules
+    ▸ I can change color theme "but I can't change the layout"
+    ▸ Layout should be same as figma design
+    ▸ I must complete main sections & bonus section
+    ▸ I can avoid optional sections (but I'll do it)
+    ▸ In responsive view "order" doesn't matter
+    ▸ I can't copy or share "codes" from any where / anyone.
+    ▸ I can't showoff assignment on facebook group
+
+  2. Submission Rules
+    ▸ Live link
+    ▸ The link must be a "GitHub hosting" link, not a live server link.
+    ▸ Repository link
+    ▸ The HTML file name shouldn't be like this "Index.html". It should be like "index.html".
+    ▸ Fully try to submit on 1st day (60 marks)
+    ▸ Deadline is Deadline (11:59 PM)
+
+  3. Main sections todo
+    ▸ Banner / Navbar Section
+    ▸ Hero section
+    ▸ Online Games section 
+    ▸ Play instantly section 
+    ▸ Games category section
+    ▸ Footer section
+
+  4. Bonus sections todo
+    ▸ Favicon
+    ▸ "Online games" hover effect
+    ▸ Mobile view responsive
+    ▸ Tablet view responsive
+
+  5. Optional sections (I'll do it)
+    ▸ Career section
+    ▸ Play Games section
